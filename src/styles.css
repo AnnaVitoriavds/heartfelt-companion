@@ -118,3 +118,82 @@ body{overflow-x:hidden}
 .gallery figure img,.gallery figure:nth-child(5n+1) img{aspect-ratio:4/5}
 .contact h2{font-size:clamp(3rem,15vw,5rem)}
 }
+
+/* Visual redesign v3 — selectors matched to current markup */
+body{background:#050505!important;color:#f7f3ea!important}
+.section{padding:clamp(88px,10vw,150px) clamp(22px,7vw,110px)}
+.site-header{height:76px;background:rgba(5,5,5,.72)!important;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(214,189,138,.16)}
+.site-header .brand strong{font-size:25px;letter-spacing:.02em}.site-header .brand span{color:#cbb58c}
+.site-header nav a:not(.nav-cta){opacity:.82;transition:.3s}.site-header nav a:hover{opacity:1;color:#e0c28a}
+.nav-cta{border-color:#c9a86b!important;color:#f8ead0!important}
+.hero{min-height:100svh;height:auto;background:#050505!important}
+.hero-photo{filter:saturate(.82) contrast(1.06);transform:scale(1.01)}
+.hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.54) 48%,rgba(0,0,0,.18) 100%),linear-gradient(0deg,rgba(0,0,0,.65),transparent 55%)!important}
+.hero-content{bottom:11vh;max-width:900px}
+.hero .eyebrow{color:#d5b97e!important;letter-spacing:.3em}
+.hero h1{font-size:clamp(68px,8.6vw,145px)!important;line-height:.82!important;max-width:9ch;text-shadow:0 20px 60px rgba(0,0,0,.42)}
+.hero h1 em{color:#d9bd84}
+.hero .lead{font-size:15px;max-width:620px;color:#eee6db}
+.btn.light{background:#d1b276!important;color:#090909!important}.btn.ghost{border-color:#d1b276!important;color:#fff!important}
+.about{background:#090909!important}
+.about-grid{max-width:1280px;margin:auto;grid-template-columns:.9fr 1.1fr;align-items:start}
+.about .kicker{color:#d2b477!important}
+.about h2{font-size:clamp(62px,7vw,112px)!important;line-height:.88}
+.about .body-copy{border-left:1px solid rgba(210,180,119,.45);padding-left:clamp(24px,4vw,55px);color:#ddd4c8}
+.about blockquote{max-width:1100px;margin:clamp(80px,10vw,145px) auto 0!important;color:#f8f2e9;border-left:0!important;text-align:center;padding:0!important;font-size:clamp(42px,5.5vw,82px)!important}
+.about blockquote:before{content:"✦";display:block;color:#cbaa6c;font-size:20px;margin-bottom:30px}
+.process{background:linear-gradient(135deg,#11100e,#050505 62%)!important}
+.process-head{max-width:1280px;margin:auto;grid-template-columns:1.3fr .7fr}
+.process-head h2{font-size:clamp(62px,7vw,108px)!important}
+.steps{max-width:1280px;margin:20px auto 0;border:1px solid rgba(210,180,119,.2)!important}
+.steps article{padding:45px!important;min-height:310px!important;border-right:1px solid rgba(210,180,119,.18)!important;background:rgba(255,255,255,.015)}
+.steps article:last-child{border-right:0!important}
+.steps span{font-size:12px!important;letter-spacing:.2em}
+.steps h3{font-size:44px!important}
+.works{background:#070707!important}
+.works-title{max-width:1280px;margin:auto}
+.works-title h2{font-size:clamp(65px,8vw,125px)!important;line-height:.83}
+.works-title h2 em{color:#d5b87e!important}
+.works-title p{border-top:1px solid #c9aa6b;padding-top:18px;color:#d8d0c6!important}
+.gallery{max-width:1280px;margin:0 auto;grid-template-rows:430px 430px!important;gap:22px!important}
+.gallery-item{border:1px solid rgba(214,189,138,.22)!important}
+.gallery-item:after{background:linear-gradient(0deg,rgba(0,0,0,.78),transparent 55%)!important}
+.gallery-item span{font-family:"Cormorant Garamond";font-size:18px!important;letter-spacing:.03em}
+.gallery-item b{color:#d9bc80!important}
+.gallery-note{max-width:1280px;margin:28px auto 0!important;color:#bdb4aa!important;text-align:center;letter-spacing:.13em!important}
+.classes{background:#e5d6bf!important;color:#17120e!important}
+.classes .section-number{color:#65574b!important;border-color:#30251e44!important}
+.classes-grid{max-width:1280px;margin:auto}
+.classes h2{font-size:clamp(60px,7vw,105px)!important}
+.classes .kicker{color:#78573e!important}
+.classes-grid>div:last-child{border:1px solid rgba(52,36,29,.22);padding:clamp(28px,4vw,55px);background:rgba(255,255,255,.22)}
+.commission{background:#0b0a09!important;border-top:1px solid rgba(210,180,119,.2);border-bottom:1px solid rgba(210,180,119,.2);padding:clamp(100px,12vw,175px) 7vw!important}
+.commission h2{font-size:clamp(64px,8vw,126px)!important;line-height:.86}.commission h2 em{color:#d4b779}
+.commission p:not(.section-number){max-width:720px;margin:35px auto;line-height:1.9;color:#cec5ba}
+.contact{background:#050505!important;text-align:center}
+.contact .kicker{color:#d2b477!important}
+.contact h2{font-size:clamp(65px,8vw,125px)!important}
+.contact-copy{margin:35px auto!important;max-width:650px;color:#cfc6bb}
+.contact-links{max-width:900px;margin:60px auto 0}
+.contact-links a{display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(210,180,119,.28);padding:24px 5px;transition:.3s}
+.contact-links a:last-child{border-bottom:1px solid rgba(210,180,119,.28)}
+.contact-links a:hover{padding-left:15px;padding-right:15px;color:#d6b978}
+footer{background:#030303!important;border-top:1px solid rgba(210,180,119,.16);color:#aaa!important}
+@media(max-width:900px){
+.site-header nav{background:#080808!important}
+.about-grid,.process-head,.classes-grid{grid-template-columns:1fr!important;gap:45px!important}
+.about .body-copy{border-left:0;border-top:1px solid rgba(210,180,119,.4);padding:30px 0 0}
+.steps{grid-template-columns:1fr!important}.steps article{border-right:0!important;border-bottom:1px solid rgba(210,180,119,.18)!important;min-height:auto!important}
+.gallery{grid-template-columns:1fr!important;grid-template-rows:none!important}.gallery-item,.gallery-item.g0{grid-row:auto!important;min-height:420px}
+}
+@media(max-width:600px){
+.site-header{height:68px;padding:0 20px}.brand strong{font-size:20px!important}
+.hero{min-height:760px}.hero-content{left:22px;bottom:10vh;width:calc(100% - 44px)}
+.hero h1{font-size:clamp(58px,17vw,82px)!important}.hero .lead{font-size:13px}
+.actions{flex-direction:column}.actions .btn{justify-content:center;text-align:center}
+.section{padding:82px 22px}.section h2{font-size:clamp(52px,15vw,74px)!important}
+.about blockquote{font-size:clamp(38px,12vw,58px)!important}
+.gallery-item,.gallery-item.g0{min-height:360px}
+.commission{padding:95px 22px!important}.commission h2,.contact h2{font-size:clamp(54px,15vw,78px)!important}
+.contact-links a{align-items:flex-start;gap:12px;flex-direction:column;text-align:left}
+}
