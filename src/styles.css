@@ -55,3 +55,66 @@ section{position:relative}
 .about,.works,.classes,.orders,.contact{padding-top:5.5rem;padding-bottom:5.5rem}
 .quote{padding-left:1.25rem}
 }
+
+/* Luxury responsive pass */
+html{scroll-padding-top:88px}
+body{overflow-x:hidden}
+.header{background:rgba(8,7,6,.78)}
+.header-inner{padding-inline:clamp(1rem,4vw,4rem);min-height:82px}
+.brand{gap:.25rem}.brand small{letter-spacing:.22em;text-transform:uppercase;font-size:.58rem}
+.hero{padding-inline:clamp(1rem,5vw,5rem);display:grid;align-items:center}
+.hero-copy{padding-block:clamp(7rem,12vw,11rem);position:relative;z-index:2}
+.hero-copy:before{content:"PORTFÓLIO · 2026";display:block;margin-bottom:1.4rem;color:var(--gold-soft);font-size:.62rem;letter-spacing:.28em}
+.hero h1{max-width:8ch;text-shadow:0 10px 45px rgba(0,0,0,.28)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.hero-media{overflow:hidden}
+.hero-media:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.42),transparent 45%);z-index:1;pointer-events:none}
+.hero-media img{width:100%;height:100%;object-fit:cover}
+.about-grid,.classes-grid,.orders-grid,.contact-grid{gap:clamp(2.5rem,7vw,8rem)}
+.about-copy p,.classes-copy p,.orders-copy p,.contact-copy p{line-height:1.9}
+.about-photos{position:relative}
+.about-photos img:first-child{width:78%}
+.about-photos img:last-child{width:55%;margin:-18% 0 0 auto;position:relative;z-index:2;border:8px solid #000}
+.process-inner{max-width:1320px;margin:auto;padding-inline:clamp(1rem,4vw,4rem)}
+.process-head{padding-bottom:clamp(3rem,6vw,6rem)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.steps article{padding:clamp(2rem,4vw,4rem);min-height:280px;border-left:1px solid rgba(255,255,255,.12)}
+.steps article:first-child{border-left:0}
+.steps article h3{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,3vw,3.2rem);font-weight:500;margin:.8rem 0}
+.works-title{display:grid;grid-template-columns:1.3fr .7fr;align-items:end;gap:2rem}
+.gallery{max-width:1440px;margin:clamp(3rem,6vw,6rem) auto 0;padding-inline:clamp(1rem,3vw,3rem);display:grid;grid-template-columns:repeat(12,1fr)}
+.gallery figure{grid-column:span 4}
+.gallery figure:nth-child(5n+1){grid-column:span 7}
+.gallery figure:nth-child(5n+2){grid-column:span 5}
+.gallery figure img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.gallery figure:nth-child(5n+1) img{aspect-ratio:16/11}
+.classes-card,.orders-card{padding:clamp(1.5rem,4vw,3.5rem)}
+.contact h2{font-size:clamp(3rem,7vw,7rem);line-height:.9}
+.btn-primary{background:var(--gold-soft);color:#111;border-color:var(--gold-soft)}
+.btn-primary:hover{background:#fff;border-color:#fff}
+@media(max-width:980px){
+.nav{display:none}
+.hero{grid-template-columns:1fr;min-height:auto;padding:0}
+.hero-copy{padding:8rem 1.25rem 3rem}
+.hero-media{position:relative;min-height:62svh}
+.hero-media:before{background:linear-gradient(0deg,rgba(0,0,0,.42),transparent 55%)}
+.about-grid,.classes-grid,.orders-grid,.contact-grid,.works-title{grid-template-columns:1fr}
+.steps{grid-template-columns:1fr}
+.steps article{min-height:auto;border-left:0;border-top:1px solid rgba(255,255,255,.14)}
+.gallery figure,.gallery figure:nth-child(5n+1),.gallery figure:nth-child(5n+2){grid-column:span 6}
+}
+@media(max-width:600px){
+.header-inner{min-height:70px}
+.brand strong{font-size:.92rem}.brand small{font-size:.5rem}
+.hero-copy{padding-top:7rem}
+.hero h1{font-size:clamp(3.2rem,17vw,5rem)}
+.hero p{font-size:.96rem}
+.hero-actions .btn{width:100%;justify-content:center;text-align:center}
+.hero-media{min-height:52svh}
+.about-photos img:first-child{width:92%}
+.about-photos img:last-child{width:64%;margin-top:-12%}
+.gallery{display:block}
+.gallery figure{margin-bottom:1.2rem}
+.gallery figure img,.gallery figure:nth-child(5n+1) img{aspect-ratio:4/5}
+.contact h2{font-size:clamp(3rem,15vw,5rem)}
+}
