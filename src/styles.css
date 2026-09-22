@@ -8,3 +8,6 @@
 .about,.works{color:#fff}
 .about .section-number,.works .section-number,.works .gallery-note{color:#fff}
 .about .kicker{color:#fff}
+
+/* Texto branco da seção Processo Criativo e Obras */
+.process,.process .section-number,.process .process-head,.process .process-head h2,.process .process-head p,.process .steps article,.process .steps article span,.process .steps article h3,.process .steps article p,.works,.works .section-number,.works .works-title,.works .works-title h2,.works .works-title h2 em,.works .works-title p{color:#fff!important}
