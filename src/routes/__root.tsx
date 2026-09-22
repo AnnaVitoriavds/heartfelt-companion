@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Adriano Felipe dos Santos | Professor de Cerâmica e Ceramista" },
+      { name: "description", content: "Conheça o trabalho de Adriano Felipe dos Santos, professor de cerâmica e ceramista. Peças autorais, aulas, oficinas, encomendas e experiências artísticas com argila." },
+      { name: "author", content: "Adriano Felipe dos Santos" },
+      { property: "og:title", content: "Adriano Felipe dos Santos | Cerâmica Autoral" },
+      { property: "og:description", content: "Peças autorais, aulas, oficinas e encomendas em cerâmica." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      
     ],
     links: [
       {
@@ -102,7 +102,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
